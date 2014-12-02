@@ -8,10 +8,10 @@
 
 #import "JSONKit.h"
 
+#define URL_SERVER_BASE         @"http://www.baidu.com/"
 
 
 //单例
-
 #define DEFINE_SINGLETON_FOR_HEADER(className) \
 \
 + (className *)shared##className;

@@ -11,7 +11,7 @@
 #import "AFNetworking.h"
 @interface HttpTools : NSObject
 {
-    
+    AFHTTPRequestOperationManager *opManager;
 }
 
 DEFINE_SINGLETON_FOR_HEADER(HttpTools)
