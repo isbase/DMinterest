@@ -17,8 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    
+
     HomeViewController *mainVC =[[HomeViewController alloc] init];
     self.window.rootViewController = mainVC;    
     return YES;
