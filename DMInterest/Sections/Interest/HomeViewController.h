@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "POP/POP.h"
+#import "POP.h"
 
 @interface HomeViewController : UIViewController
 
