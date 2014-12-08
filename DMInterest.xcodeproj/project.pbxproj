@@ -58,6 +58,7 @@
 		5FC5DE841A2F650A00CB2F85 /* POPVector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5FC5DE6C1A2F650A00CB2F85 /* POPVector.mm */; };
 		5FC5DE851A2F650A00CB2F85 /* TransformationMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FC5DE6F1A2F650A00CB2F85 /* TransformationMatrix.cpp */; };
 		5FC5DE881A2F6EF900CB2F85 /* TimerButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FC5DE871A2F6EF900CB2F85 /* TimerButton.png */; };
+		5FE136CD1A332F2000834429 /* UIView+Annimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE136CC1A332F2000834429 /* UIView+Annimate.m */; };
 		5FECC0961A2E1C0900BD16AE /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FECC0841A2E1C0900BD16AE /* AFHTTPRequestOperation.m */; };
 		5FECC0971A2E1C0900BD16AE /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FECC0861A2E1C0900BD16AE /* AFHTTPRequestOperationManager.m */; };
 		5FECC0981A2E1C0900BD16AE /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FECC0881A2E1C0900BD16AE /* AFHTTPSessionManager.m */; };
@@ -182,6 +183,8 @@
 		5FC5DE711A2F650A00CB2F85 /* UnitBezier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitBezier.h; sourceTree = "<group>"; };
 		5FC5DE861A2F6E3800CB2F85 /* DMInterest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DMInterest-Prefix.pch"; sourceTree = "<group>"; };
 		5FC5DE871A2F6EF900CB2F85 /* TimerButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TimerButton.png; path = ../TimerButton.png; sourceTree = "<group>"; };
+		5FE136CB1A332F2000834429 /* UIView+Annimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Annimate.h"; path = "DMInterest/General/UIView+Annimate.h"; sourceTree = SOURCE_ROOT; };
+		5FE136CC1A332F2000834429 /* UIView+Annimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Annimate.m"; path = "DMInterest/General/UIView+Annimate.m"; sourceTree = SOURCE_ROOT; };
 		5FECC0831A2E1C0900BD16AE /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		5FECC0841A2E1C0900BD16AE /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		5FECC0851A2E1C0900BD16AE /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -268,6 +271,8 @@
 		071D8D4A1A25BC84000C7AE5 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				5FE136CB1A332F2000834429 /* UIView+Annimate.h */,
+				5FE136CC1A332F2000834429 /* UIView+Annimate.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -706,6 +711,7 @@
 				5FC5DE851A2F650A00CB2F85 /* TransformationMatrix.cpp in Sources */,
 				5FC5DE7B1A2F650A00CB2F85 /* POPBasicAnimation.mm in Sources */,
 				5FECC09B1A2E1C0900BD16AE /* AFURLConnectionOperation.m in Sources */,
+				5FE136CD1A332F2000834429 /* UIView+Annimate.m in Sources */,
 				5FECC0981A2E1C0900BD16AE /* AFHTTPSessionManager.m in Sources */,
 				5FECC0AC1A2E235B00BD16AE /* HomeViewController.m in Sources */,
 				5FECC09C1A2E1C0900BD16AE /* AFURLRequestSerialization.m in Sources */,
