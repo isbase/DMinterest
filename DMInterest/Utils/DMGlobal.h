@@ -7,6 +7,8 @@
 //
 
 #import "JSONKit.h"
+#import "BaseViewController.h"
+#import "Utils.h"
 
 #define URL_SERVER_BASE         @"http://www.baidu.com/"
 

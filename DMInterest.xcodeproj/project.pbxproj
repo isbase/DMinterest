@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		071D8D561A25BFCB000C7AE5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 071D8D551A25BFCB000C7AE5 /* MainViewController.m */; };
+		07461B191A3AC93800F89E22 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07461B181A3AC93800F89E22 /* TTTAttributedLabel.m */; };
 		07574D1D1A245BB400A095A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07574D1C1A245BB400A095A5 /* main.m */; };
 		07574D201A245BB400A095A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07574D1F1A245BB400A095A5 /* AppDelegate.m */; };
 		07574D281A245BB400A095A5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07574D271A245BB400A095A5 /* Images.xcassets */; };
@@ -21,6 +22,9 @@
 		07574D6F1A24766100A095A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07574D6E1A24766100A095A5 /* CoreGraphics.framework */; };
 		07574D711A24767000A095A5 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07574D701A24767000A095A5 /* libz.1.2.5.dylib */; };
 		07574D791A248C1D00A095A5 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 07574D781A248C1D00A095A5 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0797B2041A37F56C00EF42DC /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0797B2031A37F56C00EF42DC /* BaseViewController.m */; };
+		0797B20F1A38195700EF42DC /* youyuan.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0797B20E1A3806A300EF42DC /* youyuan.ttf */; };
+		0797B2131A381C7A00EF42DC /* UIDevice+machine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0797B2121A381C7A00EF42DC /* UIDevice+machine.m */; };
 		5F12EAF51A2F49FA000FB466 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F12EAF31A2F49FA000FB466 /* Main.storyboard */; };
 		5F12EAF81A2F4ACF000FB466 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F12EAF61A2F4ACF000FB466 /* Default-568h@2x.png */; };
 		5F12EAF91A2F4ACF000FB466 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F12EAF71A2F4ACF000FB466 /* Default@2x.png */; };
@@ -88,6 +92,8 @@
 /* Begin PBXFileReference section */
 		071D8D541A25BFCB000C7AE5 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		071D8D551A25BFCB000C7AE5 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		07461B171A3AC93800F89E22 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
+		07461B181A3AC93800F89E22 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
 		07574D171A245BB400A095A5 /* DMInterest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMInterest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07574D1B1A245BB400A095A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07574D1C1A245BB400A095A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -110,6 +116,11 @@
 		07574D701A24767000A095A5 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		07574D771A248C1D00A095A5 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		07574D781A248C1D00A095A5 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		0797B2021A37F56C00EF42DC /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		0797B2031A37F56C00EF42DC /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		0797B20E1A3806A300EF42DC /* youyuan.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = youyuan.ttf; sourceTree = "<group>"; };
+		0797B2111A381C7A00EF42DC /* UIDevice+machine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+machine.h"; sourceTree = "<group>"; };
+		0797B2121A381C7A00EF42DC /* UIDevice+machine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+machine.m"; sourceTree = "<group>"; };
 		5F12EAF41A2F49FA000FB466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F12EAF61A2F4ACF000FB466 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5F12EAF71A2F4ACF000FB466 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -217,11 +228,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FECC0A21A2E1C6300BD16AE /* Security.framework in Frameworks */,
 				5FECC0A41A2E1C6800BD16AE /* Foundation.framework in Frameworks */,
 				5F12EB511A2F4D25000FB466 /* QuartzCore.framework in Frameworks */,
 				07574D6D1A24765800A095A5 /* MobileCoreServices.framework in Frameworks */,
 				5FECC0A61A2E1C6E00BD16AE /* CoreLocation.framework in Frameworks */,
-				5FECC0A21A2E1C6300BD16AE /* Security.framework in Frameworks */,
 				5FECC0A01A2E1C5D00BD16AE /* UIKit.framework in Frameworks */,
 				07574D711A24767000A095A5 /* libz.1.2.5.dylib in Frameworks */,
 				07574D6F1A24766100A095A5 /* CoreGraphics.framework in Frameworks */,
@@ -289,6 +300,7 @@
 		071D8D4C1A25BCA9000C7AE5 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				07461B161A3AC93800F89E22 /* TTTAttributedLabel */,
 				5FC5DE391A2F650A00CB2F85 /* pop */,
 				5FECC0821A2E1C0900BD16AE /* AFNetworking */,
 				07574D761A248C1D00A095A5 /* JSONKit */,
@@ -300,6 +312,7 @@
 		071D8D4D1A25BCB7000C7AE5 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				0797B2011A37F54A00EF42DC /* Base */,
 				071D8D501A25BD9E000C7AE5 /* Interest */,
 				071D8D4E1A25BCBD000C7AE5 /* Login */,
 			);
@@ -319,6 +332,8 @@
 				07574D401A24651F00A095A5 /* DMGlobal.h */,
 				5F12EAFA1A2F4B10000FB466 /* Utils.h */,
 				5F12EAFB1A2F4B10000FB466 /* Utils.m */,
+				0797B2111A381C7A00EF42DC /* UIDevice+machine.h */,
+				0797B2121A381C7A00EF42DC /* UIDevice+machine.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -346,6 +361,15 @@
 			children = (
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		07461B161A3AC93800F89E22 /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				07461B171A3AC93800F89E22 /* TTTAttributedLabel.h */,
+				07461B181A3AC93800F89E22 /* TTTAttributedLabel.m */,
+			);
+			path = TTTAttributedLabel;
 			sourceTree = "<group>";
 		};
 		07574D0E1A245BB400A095A5 = {
@@ -378,6 +402,7 @@
 				5FC301821A30C61900D4744B /* images */,
 				07574D1E1A245BB400A095A5 /* AppDelegate.h */,
 				07574D1F1A245BB400A095A5 /* AppDelegate.m */,
+				0797B20E1A3806A300EF42DC /* youyuan.ttf */,
 				5F12EAF31A2F49FA000FB466 /* Main.storyboard */,
 				07574D271A245BB400A095A5 /* Images.xcassets */,
 				07574D291A245BB400A095A5 /* LaunchScreen.xib */,
@@ -455,6 +480,15 @@
 				07574D421A24669E00A095A5 /* HttpTools.m */,
 			);
 			path = NetHelp;
+			sourceTree = "<group>";
+		};
+		0797B2011A37F54A00EF42DC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0797B2021A37F56C00EF42DC /* BaseViewController.h */,
+				0797B2031A37F56C00EF42DC /* BaseViewController.m */,
+			);
+			name = Base;
 			sourceTree = "<group>";
 		};
 		5FC301821A30C61900D4744B /* images */ = {
@@ -658,6 +692,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0797B20F1A38195700EF42DC /* youyuan.ttf in Resources */,
 				5F12EAF51A2F49FA000FB466 /* Main.storyboard in Resources */,
 				5FC5DE721A2F650A00CB2F85 /* InfoPlist.strings in Resources */,
 				5FC301951A30C61900D4744B /* movie_h@2x.png in Resources */,
@@ -715,6 +750,7 @@
 				5FECC0981A2E1C0900BD16AE /* AFHTTPSessionManager.m in Sources */,
 				5FECC0AC1A2E235B00BD16AE /* HomeViewController.m in Sources */,
 				5FECC09C1A2E1C0900BD16AE /* AFURLRequestSerialization.m in Sources */,
+				0797B2131A381C7A00EF42DC /* UIDevice+machine.m in Sources */,
 				071D8D561A25BFCB000C7AE5 /* MainViewController.m in Sources */,
 				5FC5DE821A2F650A00CB2F85 /* POPPropertyAnimation.mm in Sources */,
 				07574D791A248C1D00A095A5 /* JSONKit.m in Sources */,
@@ -726,10 +762,12 @@
 				5FECC09A1A2E1C0900BD16AE /* AFSecurityPolicy.m in Sources */,
 				5FECC09D1A2E1C0900BD16AE /* AFURLResponseSerialization.m in Sources */,
 				5FC5DE791A2F650A00CB2F85 /* POPAnimationTracer.mm in Sources */,
+				0797B2041A37F56C00EF42DC /* BaseViewController.m in Sources */,
 				5FC5DE811A2F650A00CB2F85 /* POPMath.mm in Sources */,
 				5FC5DE7C1A2F650A00CB2F85 /* POPCGUtils.mm in Sources */,
 				5FECC0961A2E1C0900BD16AE /* AFHTTPRequestOperation.m in Sources */,
 				5F12EAFC1A2F4B10000FB466 /* Utils.m in Sources */,
+				07461B191A3AC93800F89E22 /* TTTAttributedLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

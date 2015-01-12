@@ -17,6 +17,10 @@ DEFINE_SINGLETON_FOR_CLASS(HttpTools)
 {
     self = [super init];
     if (self) {
+        NSString *deviceId = [[UIDevice currentDevice] macaddress];
+        NSString *type = [[UIDevice currentDevice] model];
+        NSDictionary *client_info = @{@"version":@"1.0",@"type":type,@"device_id":deviceId};
+        preFixparams = @{@"client_info":client_info};
         opManager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:[NSURL URLWithString:URL_SERVER_BASE]];
     }
     return self;

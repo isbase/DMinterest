@@ -9,13 +9,11 @@
 #import "HomeViewController.h"
 #import "HttpTools.h"
 #import "UIView+Annimate.h"
+#import "TTTAttributedLabel.h"
 
 @interface HomeViewController ()
 {
-    UIImageView *_button;
-    BOOL        _timerRunning;
-    NSArray     *imageArrays;
-    NSMutableArray     *buttons;
+    NSMutableArray *fontsArray;
 }
 
 @end
@@ -26,55 +24,31 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    buttons = [NSMutableArray array];
     
-    imageArrays = @[@"coffee_h.png",@"dine_h.png",@"exercise_h.png",@"exp_person_normal",@"famou_school",@"ktv_h",@"movie_h",@"other_h",@"shopping_h",@"travel_h"];
-
-    [self createButtons];
-    //[self addAnimations];
-}
-
--(void)createButtons
-{
-    static CGFloat delyTime = 0.2;
+//    UILabel *lable = [[UILabel alloc] initWithFrame:CGRectMake(20, Screen_OffsetY + kNavigationBar_Height + 10, 280, 20)];
+//    lable.textAlignment = NSTextAlignmentLeft;
+//    lable.textColor = [UIColor blackColor];
+//    lable.text = @"此刻我正在...";
+//    lable.font = DMFontYuan;
+//    lable.backgroundColor = [UIColor clearColor];
+//    [self.view addSubview:lable];
     
-    NSInteger cols = 4;
-    CGFloat width = 62.0f;
-    for (int i = 0; i < imageArrays.count; i++) {
-        CGFloat x = i % cols;
-        CGFloat y = i / cols;
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        button.frame = CGRectMake(15 + x * (width + 15), 70 + y * (width + 15), width, width);
-        [button setBackgroundImage:[UIImage imageNamed:imageArrays[i]] forState:UIControlStateNormal];
-        [self.view addSubview:button];
-        [button setHidden:YES];
-        //[button performSelector:@selector(addScaleAnimaton) withObject:nil afterDelay:0.2 + (i/8.0f)];
-        [self performSelector:@selector(creataAnnimates:) withObject:button afterDelay:delyTime];
-        delyTime += 0.3;
-       // [buttons addObject:button];
-    }
+    UILabel *lalbe = ({
+        UILabel *lable = [[UILabel alloc] initWithFrame:CGRectMake(20, Screen_OffsetY + kNavigationBar_Height + 10, 280, 80)];
+        lable.textAlignment = NSTextAlignmentLeft;
+        lable.numberOfLines = 0;
+        lable.lineBreakMode = NSLineBreakByCharWrapping;
+        lable.textColor = [UIColor blackColor];
+        lable.text = @"今年是蒸脸器年，朋友圈销售很火，拐点出现在范冰冰蒸面微博的当天，然后不久出现一个范冰冰同款（也就是杨幂这款），其实冰冰微博根本没有出现任何机器，这到底是事先预谋好的，还是厂家抓住的商机？之后出现张馨予晒蒸脸器，被厂家拉去代言，再后面杨幂粉墨登场， 这一步步的真是，这事和我没关吧？<blue>文字颜色文字颜色<blue>";
+        lable.font = DMFontYuan;
+        lable.backgroundColor = [UIColor clearColor];
+        lable;
+    });
+    
+    [self.view addSubview:lalbe];
+    
 }
 
--(void)addAnimations
-{
-    for (int i = 0; i < buttons.count; i++) {
-        static CGFloat delyTime = 0.2;
-        [buttons[i] performSelector:@selector(addScaleAnimaton) withObject:nil afterDelay:0.2 + (i/10.0f)];
-        delyTime += 0.1;
-    }
-}
-
--(void)creataAnnimates:(UIButton *)button
-{
-    [button setHidden:NO];
-    POPSpringAnimation *buttonAnimation = [POPSpringAnimation animation];
-    buttonAnimation.property = [POPAnimatableProperty propertyWithName:kPOPLayerScaleXY];
-    buttonAnimation.fromValue = [NSValue valueWithCGSize:CGSizeMake(0.5, 0.5)];
-    buttonAnimation.toValue = [NSValue valueWithCGSize:CGSizeMake(1.0f, 1.0f)];
-    buttonAnimation.springBounciness = 25.0;
-   // buttonAnimation.springSpeed = 15.0;
-    [button.layer pop_addAnimation:buttonAnimation forKey:@"pop"];
-}
 
 
 
@@ -83,14 +57,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

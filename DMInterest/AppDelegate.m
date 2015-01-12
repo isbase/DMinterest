@@ -17,9 +17,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
-    HomeViewController *mainVC =[[HomeViewController alloc] init];
-    self.window.rootViewController = mainVC;    
+    UINavigationController *navMain = [[UINavigationController alloc] initWithRootViewController:[HomeViewController new]];
+    navMain.navigationBarHidden = YES;
+    self.window.rootViewController = navMain;
     return YES;
 }
 

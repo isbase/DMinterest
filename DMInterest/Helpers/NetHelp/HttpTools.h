@@ -9,9 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "DMGlobal.h"
 #import "AFNetworking.h"
+#import "UIDevice+machine.h"
 @interface HttpTools : NSObject
 {
     AFHTTPRequestOperationManager *opManager;
+    NSDictionary                  *preFixparams;
 }
 
 DEFINE_SINGLETON_FOR_HEADER(HttpTools)
